@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <script defer src="js/script.js"></script>
+    <title>hamburger nav bar</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav id="nav" class="relative md:container mx-0 md:mx-auto md:p-6 p-4">
+      <div class="flex container relative items-center justify-between">
+        <!-- logo -->
+        <div id="logo" class="">
+          <img src="images/logoipsum-284.svg" alt="" />
+        </div>
+        <!-- navbar info -->
+        <div class="section hidden md:flex relative">
+          <ul class="flex space-x-12 font-sans font-semibold uppercase">
+            <li class="info hover:cursor-pointer px-1">Home</li>
+            <li class="info hover:cursor-pointer px-1">contact</li>
+            <li class="info hover:cursor-pointer px-1">services</li>
+            <li class="info hover:cursor-pointer px-1">blog</li>
+          </ul>
+          <div id="marker"></div>
+        </div>
+        <!-- hamburger nav bar -->
+        <button
+          class="absolute top-0 right-0 no-animation hamburger focus:outline-none md:hidden z-20"
+          id="menu-icon"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+        <!-- menu section -->
+      </div>
+      <div
+        id="menu-section"
+        class="menu-section md:hidden absolute top-0 right-0 shadow-2xl border-l border-solid border-gray-300 min-h-fit h-screen max-w-[15rem] w-0 z-10 overflow-hidden"
+      >
+        <ul
+          class="flex flex-col font-sans font-semibold uppercase absolute top-[4.52rem] max-w-[15rem] w-full"
+        >
+          <li
+            class="hover:cursor-pointer my-1 p-4 border-b border-t border-solid border-gray-300"
+          >
+            Home
+          </li>
+          <li
+            class="hover:cursor-pointer my-1 p-4 border-b border-solid border-gray-300"
+          >
+            contact
+          </li>
+          <li
+            class="hover:cursor-pointer my-1 p-4 border-b border-solid border-gray-300"
+          >
+            services
+          </li>
+          <li
+            class="hover:cursor-pointer my-1 p-4 border-b border-solid border-gray-300"
+          >
+            blog
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <hr />
+  </body>
+</html>
